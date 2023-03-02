@@ -1,0 +1,111 @@
+{% extends 'school/teacherbase.html' %}
+{% block content %}
+
+<head>
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+  <style media="screen">
+    a:link {
+      text-decoration: none;
+    }
+
+    a:link {
+      text-decoration: none;
+    }
+
+    h6 {
+      text-align: center;
+    }
+
+    .row {
+      margin: 100px;
+    }
+  </style>
+
+</head>
+<div class="container">
+
+  <div class="row">
+
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h6 class="panel-title">Attendance</h6>
+
+      </div>
+
+      <table class="table table-hover table-striped table-bordered" id="dev-table">
+        <thead>
+
+          <tr>
+            <th>Class Name</th>
+            <th>Take Attendance</th>
+            <th>View Attendance</th>
+          </tr>
+        </thead>
+
+        <tr>
+          <td>Tailoring</td>
+          <td><a class="btn btn-primary btn-xs" href="{% url 'teacher-take-attendance' 'Tailoring'  %}"><span class="glyphicon glyphicon-plus"></span></a></td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'teacher-view-attendance' 'Tailoring'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> Hair Dressing</td>
+          <td><a class="btn btn-primary btn-xs" href="{% url 'teacher-take-attendance' 'Hair Dressing'  %}"><span class="glyphicon glyphicon-plus"></span></a></td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'teacher-view-attendance' 'Hair Dressing'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> Catering</td>
+          <td><a class="btn btn-primary btn-xs" href="{% url 'teacher-take-attendance' 'Catering'  %}"><span class="glyphicon glyphicon-plus"></span></a></td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'teacher-view-attendance' 'Catering'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> Plumbing</td>
+          <td><a class="btn btn-primary btn-xs" href="{% url 'teacher-take-attendance' 'Plumbing'  %}"><span class="glyphicon glyphicon-plus"></span></a></td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'teacher-view-attendance' 'Plumbing'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> Welding</td>
+          <td><a class="btn btn-primary btn-xs" href="{% url 'teacher-take-attendance' 'Welding'  %}"><span class="glyphicon glyphicon-plus"></span></a></td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'teacher-view-attendance' 'Welding'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> Electrical Engineering</td>
+          <td><a class="btn btn-primary btn-xs" href="{% url 'teacher-take-attendance' 'Electrical Engineering'  %}"><span class="glyphicon glyphicon-plus"></span></a></td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'teacher-view-attendance' 'Electrical Engineering'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> Computer Literacy</td>
+          <td><a class="btn btn-primary btn-xs" href="{% url 'teacher-take-attendance' 'Computer Literacy'  %}"><span class="glyphicon glyphicon-plus"></span></a></td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'teacher-view-attendance' 'Computer Literacy'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> Agriculture</td>
+          <td><a class="btn btn-primary btn-xs" href="{% url 'teacher-take-attendance' 'Agriculture'  %}"><span class="glyphicon glyphicon-plus"></span></a></td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'teacher-view-attendance' 'Agriculture'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> Building</td>
+          <td><a class="btn btn-primary btn-xs" href="{% url 'teacher-take-attendance' 'Building'  %}"><span class="glyphicon glyphicon-plus"></span></a></td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'teacher-view-attendance' 'Building'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> Carpenter</td>
+          <td><a class="btn btn-primary btn-xs" href="{% url 'teacher-take-attendance' 'Carpenter'  %}"><span class="glyphicon glyphicon-plus"></span></a></td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'teacher-view-attendance' 'Carpenter'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+      </table>
+    </div>
+  </div>
+</div>
+{% endblock content %}

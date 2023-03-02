@@ -1,0 +1,112 @@
+{% extends 'school/adminbase.html' %}
+
+
+
+{% block content %}
+
+<head>
+
+  <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+  <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
+  <style media="screen">
+    a:link {
+      text-decoration: none;
+    }
+
+    h6 {
+      text-align: center;
+    }
+
+    .row {
+      margin: 100px;
+    }
+  </style>
+
+</head>
+
+
+
+
+
+<div class="container">
+
+  <div class="row">
+
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h6 class="panel-title">FEE OF STUDENTS</h6>
+
+      </div>
+
+      <table class="table table-hover table-striped table-bordered" id="dev-table">
+        <thead>
+
+          <tr>
+            <th>Class Name</th>
+
+            <th>View Dues</th>
+          </tr>
+        </thead>
+
+        <tr>
+          <td>Tailoring</td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'admin-view-fee' 'Tailoring'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> Hair Dressing</td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'admin-view-fee' 'Hair Dressing'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> Catering</td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'admin-view-fee' 'Catering'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> Plumbig</td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'admin-view-fee' 'Plumbig'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> Welding </td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'admin-view-fee' 'Welding'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> Electrical Engineering</td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'admin-view-fee' 'Electrical Engineering'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> Computer Literacy</td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'admin-view-fee' 'Computer Literacy'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> Agriculture</td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'admin-view-fee' 'Agriculture'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> Building</td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'admin-view-fee' 'Building'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+        <tr>
+          <td> Carpentry</td>
+          <td><a class="btn btn-danger btn-xs" href="{% url 'admin-view-fee' 'Carpentry'  %}"><span class="glyphicon glyphicon-eye-open"></span></a></td>
+        </tr>
+
+      </table>
+    </div>
+
+
+  </div>
+</div>
+
+
+
+{% endblock content %}
